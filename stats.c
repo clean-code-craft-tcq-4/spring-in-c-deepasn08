@@ -4,13 +4,13 @@ struct Stats compute_statistics(const float* numberset, int setlength)
 {
     struct Stats
     {
-    average = 0;
-    min = 0;
-    max = 0;
+    float average = 0.0;
+    float min = 0.0;
+    float max = 0.0;
     } s;
     
     int i;
-    float sum = 0;
+    float sum = 0.0;
     float min,max = numberset[0];
     for(i=0;i< setlength;i++)
     {
