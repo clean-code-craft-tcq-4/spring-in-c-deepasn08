@@ -22,6 +22,7 @@ struct Stats compute_statistics(const float* numberset, int setlength)
     s.min = min;
     s.max = max;
     
+    
     return s;
 }
 
