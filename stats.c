@@ -9,7 +9,7 @@
 
 struct Stats compute_statistics(const float* numberset, int setlength) 
 {
-   struct Stat p;
+   struct Stats p;
     
     int i;
     float sum = 0.0;
