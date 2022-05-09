@@ -1,13 +1,15 @@
 #include "stats.h"
 
-struct Stats compute_statistics(const float* numberset, int setlength) 
-{
-    struct Stats
+ struct Stats
     {
     float average = 0.0;
     float min = 0.0;
     float max = 0.0;
     } s;
+
+struct Stats compute_statistics(const float* numberset, int setlength) 
+{
+   struct Stat p;
     
     int i;
     float sum = 0.0;
@@ -21,13 +23,13 @@ struct Stats compute_statistics(const float* numberset, int setlength)
        if (min > numberset[i])
          min = numberset [i] ;        
     }
-    s.average = (sum/setlength);
-    s.min = min;
-    s.max = max;
+    p.average = (sum/setlength);
+    p.min = min;
+    p.max = max;
     
     
-    return s;
-} compute_statistics ;
+    return p;
+} 
 
 int emailAlertCallCount = 0;
 int ledAlertCallCount = 0;
