@@ -2,10 +2,12 @@
 
 struct Stats compute_statistics(const float* numberset, int setlength) 
 {
-    struct Stats s;
+    struct Stats
+    {
     s.average = 0;
     s.min = 0;
     s.max = 0;
+    } s;
     int i;
     float sum = 0;
     float min,max = numberset[0];
