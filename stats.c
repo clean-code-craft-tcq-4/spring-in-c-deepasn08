@@ -13,8 +13,7 @@ struct Stats compute_statistics(const float* numberset, int setlength)
     float min = numberset[0];
     float max = numberset[0];
     
-    printf ("min is %f", min);
-    printf ("max is %f", max);
+
     for(i=0;i< setlength;i++)
     {
        sum = sum + numberset[i] ;
