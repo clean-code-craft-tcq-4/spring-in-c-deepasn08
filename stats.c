@@ -1,11 +1,10 @@
 #include "stats.h"
 
-
-
 struct Stats compute_statistics(const float* numberset, int setlength) 
 {
    struct Stats p;
     
+   //test 1
     int i;
     float sum = 0.0;
     float min,max = numberset[0];
@@ -21,10 +20,19 @@ struct Stats compute_statistics(const float* numberset, int setlength)
     p.average = (sum/setlength);
     p.min = min;
     p.max = max;
-    
-    
+     
+   //test 2
+   if (numberset == 0 && setlength == 0)
+   {
+    p.average = NaN;
+    p.min = NaN;
+    p.max = NaN; 
+   }
+   
     return p;
 } 
+
+
 
 int emailAlertCallCount = 0;
 int ledAlertCallCount = 0;
