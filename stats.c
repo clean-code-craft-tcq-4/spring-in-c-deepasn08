@@ -25,9 +25,9 @@ struct Stats compute_statistics(const float* numberset, int setlength)
    //test 2
    if (numberset == 0 && setlength == 0)
    {
-    p.average = NaN;
-    p.min = NaN;
-    p.max = NaN; 
+    p.average = NAN;
+    p.min = NAN;
+    p.max = NAN; 
    }
    
     return p;
