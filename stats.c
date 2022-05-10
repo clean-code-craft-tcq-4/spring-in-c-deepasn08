@@ -6,11 +6,15 @@ struct Stats compute_statistics(const float* numberset, int setlength)
    struct Stats p;
     
    //test 1
+    if(setlength != 0)
+    {
     int i;
     float sum = 0.0;
     float min = numberset[0];
     float max = numberset[0];
-   
+    
+    printf ("min is %f", min);
+    printf ("max is %f", max);
     for(i=0;i< setlength;i++)
     {
        sum = sum + numberset[i] ;
@@ -23,6 +27,7 @@ struct Stats compute_statistics(const float* numberset, int setlength)
     p.average = (sum/setlength);
     p.min = min;
     p.max = max;
+    }
      
    //test 2
    if (numberset == 0 && setlength == 0)
