@@ -8,7 +8,9 @@ struct Stats compute_statistics(const float* numberset, int setlength)
    //test 1
     int i;
     float sum = 0.0;
-    float min,max = numberset[0];
+    float min = numberset[0];
+    float max = numberset[0];
+   
     for(i=0;i< setlength;i++)
     {
        sum = sum + numberset[i] ;
