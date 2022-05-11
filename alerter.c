@@ -1,17 +1,17 @@
 #include "alerter.h"
 
-  int emailAlerter()
+  void emailAlerter()
     {
         emailAlertCallCount ++;
     }
     
-  int ledAlerter()
+  void ledAlerter()
     {
         ledAlertCallCount ++;
     }
- int (*alerters[])(int,int) = {emailAlerter, ledAlerter};
+ alerter_funcptr alerters[] = {emailAlerter, ledAlerter};
 
- int check_and_alert(maxThreshold, alerters, computedStats);
+ void check_and_alert(maxThreshold, alerters, computedStats);
 {
         if (computedStats.average > maxThreshold)
         {
