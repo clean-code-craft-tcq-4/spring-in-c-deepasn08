@@ -13,7 +13,7 @@
 
  void check_and_alert(float maxThreshold, alerter_funcptr alerters[], Stats computedStats)
 {
-        if (computedStats.average > maxThreshold)
+        if (computedStats.max > maxThreshold)
         {
            alerters[0]();
            alerters[1]();
