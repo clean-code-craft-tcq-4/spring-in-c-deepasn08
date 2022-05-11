@@ -9,7 +9,7 @@
     {
         ledAlertCallCount ++;
     }
- alerter_funcptr alerters[] = {emailAlerter, ledAlerter};
+ //alerter_funcptr alerters[] = {emailAlerter, ledAlerter};
 
  void check_and_alert(float maxThreshold, alerter_funcptr alerters[], Stats computedStats)
 {
